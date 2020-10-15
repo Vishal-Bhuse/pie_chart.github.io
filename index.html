@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		*{
+			padding: 0;margin: 0;box-sizing: border-box;
+		}
+		.main{
+			width: 100vw;
+			height: 100vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background: #fff;
+		}
+		.center {
+			width: calc(100vw - 40vw);
+			height: calc(100vh - 30vh);
+			background: #fff;
+			position: relative;
+			box-shadow:
+			 0px 2.8px 2.2px rgba(0,0, 0, 0.34),
+			0px 6.7px 5.3px rgba(0,0, 0, 0.048),
+			0 12.5px 10px rgba(0,0,0,0.06),
+			0 22.3px 17.9px rgba(0,0,0,0.072),
+			0px 49.7px 33.3px rgba(0,0, 0, 0.086),
+			0 100px 80px rgba(0,0,0,0.12)
+
+		}
+		.center h1{
+			padding: 20px 0 20px 20px;
+		}
+
+		.center p{
+			position: absolute;
+			bottom: 0;
+			right: 0.8rem;
+			font-size: 1.1rem;
+			text-align: right;
+
+
+		}
+		.center  span::after{
+			content: '';
+			display: inline-block;
+			width: 10px;
+			height: 10px;
+			border-radius: 30%;
+			font-weight: 700;
+			background: currentColor;
+			margin-left: 10px;
+		}
+		.pie{
+			/*background: radial-gradient(circle closest-side,transparent 180%,#fff 0),
+			conic-gradient(
+				from 180deg,
+				#130f40 0,
+				#130f40 30%,
+				#55E6C1 0,
+				#55E6C1 50%,
+				#dff9fb 0,
+				#dff9fb 63%,
+				#badc58 0,
+				#badc58 73%,
+				#22a6b3 0,
+				#22a6b3 92%,
+				#f9ca24 0,
+				#f9ca24 100%);
+			min-width: 300px;
+			min-height: 250px;*/
+
+
+			background: radial-gradient(circle closest-side,transparent 100%,#fff ),
+			conic-gradient(
+				red,green,pink,grey,yellow,blue);
+			min-width: 300px;
+			min-height: 250px;
+
+		}
+	</style>
+</head>
+<body>
+
+<div class="main">
+	<div class="center">
+		<h1>Pie chart given</h1>
+
+		<div class="pie"></div>
+
+		<p>
+			Maharastra <span style="color: #130f40"></span><br>
+			Kerla <span style="color: #55E6C1"></span><br>
+			Karnataka <span style="color: #dff9fb"></span><br>
+			Tamilnadu <span style="color: #badc58"></span><br>
+			Madhypradesh <span style="color: #22a6b3"></span><br>
+			Utrakhand <span style="color: #f9ca24"></span><br>
+		</p>
+
+		
+	</div>
+	
+</div>
+</body>
+</html>
